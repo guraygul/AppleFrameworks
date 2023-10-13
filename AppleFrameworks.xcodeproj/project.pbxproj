@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10C4D0832AD9BD57003B840A /* FrameworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C4D0822AD9BD57003B840A /* FrameworkView.swift */; };
+		10C4D0862AD9BD8B003B840A /* FrameworkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C4D0852AD9BD8B003B840A /* FrameworkListView.swift */; };
 		10C830E72AD8169200B8D685 /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C830E62AD8169200B8D685 /* AFButton.swift */; };
 		10C830E92AD81ACB00B8D685 /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C830E82AD81ACB00B8D685 /* FrameworkGridViewModel.swift */; };
 		10C830ED2AD86F7F00B8D685 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C830EC2AD86F7F00B8D685 /* XDismissButton.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10C4D0822AD9BD57003B840A /* FrameworkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameworkView.swift; sourceTree = "<group>"; };
+		10C4D0852AD9BD8B003B840A /* FrameworkListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameworkListView.swift; sourceTree = "<group>"; };
 		10C830E62AD8169200B8D685 /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
 		10C830E82AD81ACB00B8D685 /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
 		10C830EC2AD86F7F00B8D685 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
@@ -46,9 +50,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10C4D0812AD9BD57003B840A /* FrameworkView */ = {
+			isa = PBXGroup;
+			children = (
+				10C4D0822AD9BD57003B840A /* FrameworkView.swift */,
+			);
+			path = FrameworkView;
+			sourceTree = "<group>";
+		};
+		10C4D0842AD9BD8B003B840A /* FrameworkListView */ = {
+			isa = PBXGroup;
+			children = (
+				10C4D0852AD9BD8B003B840A /* FrameworkListView.swift */,
+			);
+			path = FrameworkListView;
+			sourceTree = "<group>";
+		};
 		10C830EE2AD870D500B8D685 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				10C4D0812AD9BD57003B840A /* FrameworkView */,
+				10C4D0842AD9BD8B003B840A /* FrameworkListView */,
 				10C830EF2AD870E800B8D685 /* FrameworkGridView */,
 				10C830F02AD8712B00B8D685 /* FrameworkDetailView */,
 			);
@@ -215,7 +237,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				10C830F62AD8747D00B8D685 /* BackgroundView.swift in Sources */,
+				10C4D0862AD9BD8B003B840A /* FrameworkListView.swift in Sources */,
 				10C830E72AD8169200B8D685 /* AFButton.swift in Sources */,
+				10C4D0832AD9BD57003B840A /* FrameworkView.swift in Sources */,
 				10F33F8B2AD7325E0076770A /* FrameworkGridView.swift in Sources */,
 				10F33F9B2AD741F50076770A /* FrameworkInsideView.swift in Sources */,
 				10F33F972AD732A40076770A /* Framework.swift in Sources */,

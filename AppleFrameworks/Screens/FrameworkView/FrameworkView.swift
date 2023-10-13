@@ -9,17 +9,26 @@ import SwiftUI
 
 struct FrameworkView: View {
     var viewModel = FrameworkGridViewModel()
-    
+    @AppStorage("showingGrid") private var showingGrid = true
     var body: some View {
         NavigationStack {
             ZStack {
                 BackgroundView()
-                ScrollView{
-                    LazyVGrid(columns: viewModel.columns) {
-                        ForEach(MockData.frameworks) { framework in
-                            NavigationLink(value: framework) {
-                                FrameworkTitleView(framework: framework)
-                            }
+                Group {
+                    if showingGrid {
+                        FrameworkGridView()
+                    } else {
+                        FrameworkListView()
+                    }
+                }
+                .toolbar {
+                    Button {
+                        showingGrid.toggle()
+                    } label: {
+                        if showingGrid {
+                            Label("Show as Table", systemImage: "list.dash")
+                        } else {
+                            Label("Show as Grid", systemImage: "square.grid.2x2")
                         }
                     }
                 }

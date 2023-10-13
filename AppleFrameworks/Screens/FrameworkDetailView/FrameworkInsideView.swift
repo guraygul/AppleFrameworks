@@ -11,7 +11,6 @@ struct FrameworkInsideView: View {
     var framework: Framework
     
     var body: some View {
-        
         ZStack{
             BackgroundView()
             VStack {
