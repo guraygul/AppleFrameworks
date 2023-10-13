@@ -21,6 +21,7 @@ struct FrameworkGridView: View {
                             NavigationLink(value: framework) {
                                 FrameworkTitleView(framework: framework)
                             }
+                            // test
                         }
                     }
                 }
